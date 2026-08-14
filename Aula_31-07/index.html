@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 31/07</title>
+</head>
+
+<body>
+    <script>
+        /*//string
+        var texto = "Curso de JavaScript"
+
+        //number
+        var numeroInteiro = -7
+        var numeroFracionado = 11210.75
+
+        //boolean
+        var teste = false //true -> verdadeiro / false -> falso
+
+        alert(numeroFracionado) //abrir log
+        document.write(texto)
+        console.log(numeroInteiro)
+
+        alert(texto)
+        alert("Aula de Front")*/
+
+        /*var nome = prompt('Digite seu nome?')
+        var idade = prompt('Digite a sua idade:')
+        var idade2 = 50
+
+        console.log(idade)
+        console.log(idade2)
+
+        document.write('<h1>Olá ' + nome + ', tudo bem? Estou vendo aqui que você tem ' + idade + ' anos</h1>')*/
+
+        /* var texto = promt("Digite um texto")
+         var numeroInteiro = prompt("Digite um número inteiro")
+         var numeroDecimal = prompt("Digite um número decimal")
+         //tipo de variaveis booleano true ou false
+
+         var soma = parseInt(numeroInteiro) +150
+         var tipoBoolean = false
+         document.write('<h1>PRIMEIRA AULA DE JAVASCRIPT</h1>')
+         document.write('<ul><li>A variável texto contém o valor: $(texto)</li>')
+         document.write('<li>A variável numeroInteiro contém o valor:$(numeroInteiro)</li>')
+         document.write('<li>A variável numeroDecimal contém o valor: $(numeroDecimal)</li></ul>')*/
+
+        /*var nota = prompt('Digite a nota do aluno:')
+        var faltas = prompt('Digite a quantidade de faltas:')
+
+        var media = 7
+        var faltas_maximas = 15
+
+        if (nota >= media && faltas <= faltas_maximas) {
+            document.write('Aprovado')
+        } else {
+            document.write('Reprovado')
+        }*/
+
+        var peso = prompt('Digite o seu peso:')
+        var altura = prompt('Digite sua altura:')
+
+        var imc = peso / (altura * altura)
+
+        if (imc < 18.5) {
+            document.write(`Seu IMC é: ${imc.toFixed(2)}, você está abaixo do peso.`)
+        } else if (imc >= 18.5 && imc <= 24.9) {
+            document.write(`Seu IMC é: ${imc.toFixed(2)}, você está com peso ideal.`)
+        } else if (imc >= 25 && imc <= 29.9) {
+            document.write(`Seu IMC é: ${imc.toFixed(2)}, você está levemente acima do peso.`)
+        } else if (imc >= 30 && imc <= 34.9) {
+            document.write(`Seu IMC é: ${imc.toFixed(2)}, você está com obesidade grau I.`)
+        } else if (imc >= 35 && imc <= 39.9) {
+            document.write(`Seu IMC é: ${imc.toFixed(2)}, você está com obesidade grau II.`)
+        } else {
+            document.write(`Seu IMC é: ${imc.toFixed(2)}, você está com obesidade grau III.`)
+        }
+    </script>
+</body>
+
+</html>
