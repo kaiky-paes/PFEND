@@ -12,9 +12,9 @@
         margin: auto;
         width: 50%;
         height: 550px;
-        width: 800px;
+        width: 320px;
         border: solid;
-        background-color: #960018;
+        background-color: #000000;
     }
 
     h1 {
@@ -23,6 +23,7 @@
 
     #principal {
         margin: auto;
+        margin-top: 22px;
         height: 150px;
         width: 150px;
         border: solid;
@@ -56,30 +57,32 @@
 </style>
 
 <script>
-    function acao1() {
-        alert('Evento de Onclick')
-        document.getElementById("principal").innerText = "CÍRCULO"
-    }
-
-    function acao2() {
-        alert('Evento de Double Click')
-        document.getElementById("principal2").innerText = "CÍRCULO2"
-    }
-
-    function acao3() {
-        alert('Evento de OnMouse')
-        document.getElementById("principal2").innerText = "CÍRCULO3"
+    function acao(idAcao) {
+        document.getElementById("principal").style.backgroundColor = "#696969"
+        document.getElementById("principal2").style.backgroundColor = "#696969"
+        document.getElementById("principal3").style.backgroundColor = "#696969"
+        switch (idAcao) {
+            case 1:
+                document.getElementById("principal").style.backgroundColor = "#FF0000"
+                break
+            case 2:
+                document.getElementById("principal2").style.backgroundColor = "#FFFF00"
+                break
+            case 3:
+                document.getElementById("principal3").style.backgroundColor = "#00FF00"
+                break
+        }
     }
 </script>
 
 <body>
     <h1>Eventos</h1>
     <div id="container">
-        <div id="principal" onclick="acao1()"></div>
+        <div id="principal" onclick="acao(1)"></div>
         <br>
-        <div id="principal2" ondblclick="acao2()"></div>
+        <div id="principal2" onclick="acao(2)"></div>
         <br>
-        <div id="principal3" onmouseover="acao3()"></div>
+        <div id="principal3" onclick="acao(3)"></div>
     </div>
 </body>
 
