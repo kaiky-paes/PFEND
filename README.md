@@ -4,3 +4,5 @@ Repositório destinado às atividades e projetos desenvolvidos na disciplina de 
 
 ## Tecnologias
 - Javascript
+- HTML
+- CSS
