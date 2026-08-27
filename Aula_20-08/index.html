@@ -17,25 +17,35 @@
         <section>
             <h2>Qual é a capital de Gales?</h2>
             <br>
-            <div class="resposta">
-                <button onclick="question(0)"></button>
-                <p>Amsterdã</p>
-            </div>
+            <form onsubmit="question(event)">
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Amsterdã
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question(1)"></button>
-                <p>Cardiff</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="1">Cardiff
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question(0)"></button>
-                <p>Jabaquara</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Jabaquara
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question(0)"></button>
-                <p>Vancouver</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Vancouver
+                    </label>
+                </div>
+
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
         </section>
     </main>
 </body>

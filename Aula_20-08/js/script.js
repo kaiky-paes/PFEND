@@ -1,86 +1,117 @@
-let acertos = 0
+let acertos = Number(sessionStorage.getItem('qtdAcertos')) || 0;
+let pagina = 0;
 
 function correta() {
-    alert("Respota correta.")
+    alert("Resposta correta.")
 }
 
 function errada() {
-    alert("Respota errada.")
+    alert("Resposta errada.")
 }
 
-function question(idQuestion) {
-    switch (idQuestion) {
+function proxPagina(numPagina) {
+    switch (numPagina) {
         case 1:
-            acertos++
-            sessionStorage.setItem('varAcertos', acertos)
-            correta()
             window.location.href = "html/quiz2.html"
             break
-        default:
-            errada()
-            window.location.href = "html/quiz2.html"
-            break
-    }
-}
-
-function question2(idQuestion) {
-    switch (idQuestion) {
-        case 1:
-            acertos++
-            sessionStorage.setItem('varAcertos', acertos)
-            correta()
+        case 2:
             window.location.href = "quiz3.html"
             break
-        default:
-            errada()
-            window.location.href = "quiz3.html"
-            break
-    }
-}
-
-function question3(idQuestion) {
-    switch (idQuestion) {
-        case 1:
-            acertos++
-            sessionStorage.setItem('varAcertos', acertos)
-            correta()
+        case 3:
             window.location.href = "quiz4.html"
             break
-        default:
-            errada()
-            window.location.href = "quiz4.html"
-            break
-    }
-}
-
-function question4(idQuestion) {
-    switch (idQuestion) {
-        case 1:
-            acertos++
-            sessionStorage.setItem('varAcertos', acertos)
-            correta()
+        case 4:
             window.location.href = "quiz5.html"
             break
-        default:
-            errada()
-            window.location.href = "quiz5.html"
-            break
-    }
-}
-
-function question5(idQuestion) {
-    switch (idQuestion) {
-        case 1:
-            acertos++
-            sessionStorage.setItem('varAcertos', acertos)
-            correta()
-            window.location.href = "resultado.html"
-            break
-        default:
-            errada()
+        case 5:
             window.location.href = "resultado.html"
             break
     }
 }
 
-document.getElementById("a").innerText = `${acertos}`
+function responder(event, proximaPagina) {
+}
+
+function question(proxima) {
+    event.preventDefault();
+    const respSelecionada = document.querySelector('input[name="resposta"]:checked');
+    let valor = Number(respSelecionada.value);
+
+    if (valor === 1) {
+        acertos++
+        sessionStorage.setItem('qtdAcertos', acertos)
+        correta()
+    } else {
+        errada()
+    }
+    pagina++
+    proxPagina(1)
+}
+
+function question2(proxima) {
+    event.preventDefault();
+    const respSelecionada = document.querySelector('input[name="resposta"]:checked');
+    let valor = Number(respSelecionada.value);
+
+    if (valor === 1) {
+        acertos++
+        sessionStorage.setItem('qtdAcertos', acertos)
+        correta()
+    } else {
+        errada()
+    }
+    pagina++
+    proxPagina(2)
+}
+
+function question3(proxima) {
+    event.preventDefault();
+    const respSelecionada = document.querySelector('input[name="resposta"]:checked');
+    let valor = Number(respSelecionada.value);
+
+    if (valor === 1) {
+        acertos++
+        sessionStorage.setItem('qtdAcertos', acertos)
+        correta()
+    } else {
+        errada()
+    }
+    pagina++
+    proxPagina(3)
+}
+
+function question4(proxima) {
+    event.preventDefault();
+    const respSelecionada = document.querySelector('input[name="resposta"]:checked');
+    let valor = Number(respSelecionada.value);
+
+    if (valor === 1) {
+        acertos++
+        sessionStorage.setItem('qtdAcertos', acertos)
+        correta()
+    } else {
+        errada()
+    }
+    pagina++
+    proxPagina(4)
+}
+
+function question5(proxima) {
+    event.preventDefault();
+    const respSelecionada = document.querySelector('input[name="resposta"]:checked');
+    let valor = Number(respSelecionada.value);
+
+    if (valor === 1) {
+        acertos++
+        sessionStorage.setItem('qtdAcertos', acertos)
+        correta()
+    } else {
+        errada()
+    }
+    proxPagina(5)
+}
+
+const totalAcertos = document.getElementById('total')
+if (totalAcertos) {
+    totalAcertos.innerText = acertos;
+}

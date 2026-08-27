@@ -17,25 +17,35 @@
         <section>
             <h2>Qual peça de computador armazena a BIOS?</h2>
             <br>
-            <div class="resposta">
-                <button onclick="question2(0)"></button>
-                <p>Processador</p>
-            </div>
+            <form onsubmit="question2(event)">
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Processador
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question2(0)"></button>
-                <p>Memória RAM</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Memória RAM
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question2(0)"></button>
-                <p>HD/SSD</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">HD/SSD
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question2(1)"></button>
-                <p>Placa Mãe</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="1">Placa Mãe
+                    </label>
+                </div>
+
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
         </section>
     </main>
 </body>

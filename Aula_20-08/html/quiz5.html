@@ -17,25 +17,35 @@
         <section>
             <h2>Qual desses aplicativos é um SGBD?</h2>
             <br>
-            <div class="resposta">
-                <button onclick="question5(0)"></button>
-                <p>IntelliJ</p>
-            </div>
+            <form onsubmit="question5(event)">
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">IntelliJ
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question5(1)"></button>
-                <p>MySQL</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="1">MySQL
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question5(0)"></button>
-                <p>Postman</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Postman
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question5(0)"></button>
-                <p>Git</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Git
+                    </label>
+                </div>
+
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
         </section>
     </main>
 </body>

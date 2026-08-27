@@ -17,25 +17,35 @@
         <section>
             <h2>Qual desses aplicativos não é uma IDE?</h2>
             <br>
-            <div class="resposta">
-                <button onclick="question4(0)"></button>
-                <p>Android Studio</p>
-            </div>
+            <form onsubmit="question4(event)">
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Android Studio
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question4(0)"></button>
-                <p>Eclipse</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">Eclipse
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question4(1)"></button>
-                <p>VS Code</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="1">VS Code
+                    </label>
+                </div>
 
-            <div class="resposta">
-                <button onclick="question4(0)"></button>
-                <p>IntelliJ</p>
-            </div>
+                <div class="resposta">
+                    <label>
+                        <input type="radio" name="resposta" value="0">IntelliJ
+                    </label>
+                </div>
+
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
         </section>
     </main>
 </body>
