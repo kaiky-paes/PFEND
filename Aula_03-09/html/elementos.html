@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Elementos</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+    <p id="idTest" class="nameClass">TESTE DE DOM</p>
+    <h1>TÍTULO 1</h1>
+    <h1>TÍTULO 2</h1>
+    <h1>TÍTULO 3</h1>
+    <h1>TÍTULO 4</h1>
+
+    <script>
+        console.log('Por id')
+        console.log(document.getElementById('nome_usuario'))
+
+        console.log('Por Tag Name')
+        console.log(document.getElementsByTagName('input'))
+        console.log(document.getElementsByTagName('h1').length)
+        var teste = document.getElementsByTagName('h1')
+        //pode pegar elementos por posição, pelo ID ou pelo elemento
+        teste[2].innerHTML = "New Title"
+        console.log(teste[0])
+
+        titulos = document.getElementsByTagName('h1')
+
+        for (let i = 0; i < titulos.length; i++) {
+            titulos[i].innerHTML = "AULA TAGS"
+        }
+
+        console.log('Por Class Name')
+        console.log(document.getElementsByClassName('campo_texto'))
+
+        console.log('Por Name')
+        console.log(document.getElementsByName('nome'))
+
+
+        console.log('Por querySelector')
+        //por tag (elemento)
+        // --Selecionar por classe ('.minha-classe')
+        // --Selecionar por ID ('#meu-id')
+        console.log(document.querySelector('h1'))
+
+        console.log('Por querySelectorAll')
+        console.log(document.querySelectorAll('h1'))
+        console.log(document.querySelectorAll('h1').length)
+        console.log(document.querySelectorAll('h1')[3])
+
+        var node = document.querySelectorAll('h1')
+        for (let i = 0; i < node.length; i++) {
+            node[i].style.backgroundColor = "red";
+        }
+
+        node.forEach(function (caixa, id) {
+            caixa.style.backgroundColor = 'blue';
+            console.log(id, caixa)
+        }
+        )
+    </script>
+</body>
+
+</html>
