@@ -61,6 +61,20 @@
             console.log(id, caixa)
         }
         )
+
+        node.forEach(caixa => {
+            caixa.style.color = 'red';
+        });
+
+        //sem ArrowFunction
+        const multiply = function(a, b) {return a * b}
+        const hello = function() {return "Hello World!";}
+
+        //com ArrowFunction
+        const multiply2 = (a, b) => a * b;
+        const hello2 = () => "Hello World!";
+
+        const square = x => x * x;
     </script>
 </body>
 

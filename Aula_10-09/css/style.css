@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;   
+    background-color: #ACACBD;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    margin-right: 500px;
+}
+
+#container {
+    margin: 40px;
+    position: relative;
+    border: solid;
+}
+
+.carro {
+    position: absolute;
+    left: 0px;
+    width: 400px;
+}
+
+.carro img {
+    width: 100%;
+}
+
+#carro1 {
+    top: 0px;
+}
+
+#carro2 {
+    top: 275px;
+}
+
+#carro3 {
+    top: 550px;
+}
+
+/*#chegada {
+
+}*/
