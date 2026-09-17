@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: auto;
+    height: 800px;
+    width: 80%;
+    text-align: center;
+    border: solid 1px #FF0000;
+}
+
+header {
+    height: 4vh;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: solid 1px black;
+}
+
+section {
+    width: 60%;
+    border: solid 1px black;
+}
+
+aside {
+    width: 30%;
+}

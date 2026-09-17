@@ -9,26 +9,37 @@
 </head>
 
 <body>
-    <h1>CORRIDA MALUCA</h1>
-    
-    <button onclick="moverAleatorio()">ACELERAR</button>
+    <header>
+        <h1>CORRIDA MALUCA</h1>
 
-    <section id="container">
-        <div id="inicio"></div>
-        <div class="carro" id="carro1">
-            <img src="img/lancer-evolution.webp">
-        </div>
+        <button id="botao" onclick="moverAleatorio()">ACELERAR</button>
+    </header>
 
-        <div class="carro" id="carro2">
-            <img src="img/porsche-911-gt3.png">
-        </div>
+    <main>
+        <section id="container">
+            <div id="inicio"></div>
 
-        <div class="carro" id="carro3">
-            <img src="img/lamborghini-huracan.webp">
-        </div>
+            <div id="chegada">
+                <img src="img/chegada.png">
+            </div>
 
-        <div id="chegada"></div>
-    </section>
+            <div class="carro" id="carro1">
+                <img src="img/lancer-evolution.webp">
+            </div>
+
+            <div class="carro" id="carro2">
+                <img src="img/porsche-911-gt3.png">
+            </div>
+
+            <div class="carro" id="carro3">
+                <img src="img/lamborghini-huracan.webp">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div></div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
