@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,16 +12,18 @@
     </header>
     
     <main>
-        <section>
-            <p>1 - Tarefa: Roger</p>
+        <section id="lista">
+            
         </section>
         <aside>
-            <button>Inserir Tarefa</button>
-            <button>Excluir Tarefa</button>
-            <button>Alterar Tarefa</button>
+            <button onclick="inserirTarefa()">Inserir Tarefa</button>
+            <button onclick="excluirTarefa()">Excluir Tarefa</button>
+            <button onclick="excluirTarefaID()">Excluir Tarefa ID</button>
+            <button onclick="excluirTarefas()">Excluir Todas as Tarefas</button>
+            <button onclick="alterarTarefa()">Alterar Tarefa</button>
         </aside>
     </main>
 
-    <script href="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
