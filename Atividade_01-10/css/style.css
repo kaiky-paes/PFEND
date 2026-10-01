@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    height: 770px;
+    width: 60%;
+    border: solid 1px;
+}
+
+header {
+    height: 7vh;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: solid 1px #FFFFFF;
+}
+
+section {
+    height: 100%;
+    width: 80%;
+    font-size: 1.5rem;
+    border: solid 1px #FFFFFF;
+}
+
+p {
+    margin: 5px;
+}
+
+#botao {
+    margin-left: 5px;
+    height: 24px;
+    width: 24px;
+    background: #FFFFFF;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 40%;
+    border: solid 1px #FFFFFF;
+}
+
+aside > button {
+    height: 8%;
+    width: 35%;
+    color: #FFFFFF;
+    background: #1b1b1b;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #000000;
+}
