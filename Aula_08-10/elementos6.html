@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<script>
+
+    function myFunction() {
+        const span = document.getElementById("mySpan");
+        const h2 = document.getElementById("myH2");
+        h2.insertAdjacentElement("afterend", span);
+    }
+    function myFunction1() {
+        const span = document.getElementById("mySpan");
+        const h2 = document.getElementById("myH2");
+        h2.insertAdjacentElement("afterbegin", span);
+    }
+    function myFunction2() {
+        const span = document.getElementById("mySpan");
+        const h2 = document.getElementById("myH2");
+        h2.insertAdjacentElement("beforeend", span);
+    }
+    function myFunction3() {
+        const span = document.getElementById("mySpan");
+        const h2 = document.getElementById("myH2");
+        h2.insertAdjacentElement("beforebegin", span);
+    }
+
+    /*
+    'afterend': Insere depois do próprio elemento alvo (fora dele)
+    'afterbegin': Insere dentro do elemento alvo, antes do primeiro filho.
+    'beforeend': Insere dentro do elemento alvo, após o último filho.
+    'beforebegin': Insere antes do próprio elemento alvo (fora dele).
+    */
+
+</script>
+
+<html>
+
+<body>
+    <h2>O metodo insertAdjacentElement()</h2>
+
+    <button onclick="myFunction()">Mover afterend</button>
+    <button onclick="myFunction1()">Mover afterbegin </button>
+    <button onclick="myFunction2()">Mover beforeend</button>
+    <button onclick="myFunction3()">Mover beforebegin </button>
+
+    <p>Clique "Move" para inserir o span vermelhor depois do header.</p>
+    <span id="mySpan" style="color:red">Meu span</span>
+    <H2 id="myH2" style="background-color:yellow;">Meu Header</H2>
+</body>
+</html>

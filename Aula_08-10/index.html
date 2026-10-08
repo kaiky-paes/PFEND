@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+    <script>
+        function minhaFuncao() {
+            const div = document.getElementById("minhaDiv")
+            div.after("World!")
+            document.getElementById("minhaDiv").after("World!")
+        }
+
+        function minhaFuncao2() {
+            const div = document.getElementById("minhaDiv")
+            const h3 = document.createElement("h3")
+            div.append(h3)
+            h3.append("Hello! Este é o append no h3")
+        }
+
+        function minhaFuncao3() {
+            const div = document.getElementById("minhaDiv")
+            div.before("Texto antes do elemento!")
+            //document.getElementById("minhaDiv").before("World!")
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Objetos Elementos</h1>    
+    <h2>Elemento after()</h2>
+    <div id="minhaDiv">Hello</div>
+    <p>Clique para inserir depois da DIV:</p>
+    <button onclick="minhaFuncao()">AFTER</button>
+    <button onclick="minhaFuncao2()">APEND</button>
+    <button onclick="minhaFuncao3()">BEFORE</button>
+</body>
+</html>

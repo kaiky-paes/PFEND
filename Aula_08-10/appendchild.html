@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appendchild</title>
+    <script>
+        function minhaFuncao() {
+            //Criar no "li"
+            const node = document.createElement("li")
+            //Criando um texto:
+            const textnode = document.createTextNode("Água")
+            //Acrescentar o texto no "Li" node:
+            node.appendChild(textnode)
+            //Acrescentar o "li" na lista:
+            document.getElementById("minhaLista").appendChild(node)
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Objetos Elementos</h1>
+    <h2 id="titulo">Elemento Appendchild() </h2>
+    <ul id="minhaLista">
+        <li>Café</li>
+        <li>Chá</li>
+    </ul>
+    <p>Clique aqui para adcionar na lista:</p>
+    <button onclick="minhaFuncao()">Append um filho</button>
+</body>
+
+</html>
